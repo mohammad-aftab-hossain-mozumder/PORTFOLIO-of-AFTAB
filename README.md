@@ -1,1 +1,1 @@
-live link: https://md-aftab-hossain-mozumder.surge.sh/
+live link: https://aftab-hossain-mazumdar.netlify.app/

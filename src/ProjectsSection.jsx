@@ -71,6 +71,26 @@ export default function ProjectsSection({id}) {
     const projects = [
         {
             id: 1,
+            title: "BookCourier – Multi-Role Library Delivery Management System ⭐⭐⭐",
+            tech: ["React","MongoDB", "Firebase", "Stripe", "Tailwind"],
+            image: "https://i.ibb.co.com/DgQbQZKh/image.png",
+            emoji: "⚡",
+            live: "https://assignment-11-bc60e.web.app/",
+            client:"https://github.com/mohammad-aftab-hossain-mozumder/BOOK-COURIER-ASSIGNMENT-11.git",
+            server:"https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-11-BOOK-COURIER-SERVER.git",
+            desc: `A production-ready MERN stack library-to-home book delivery system featuring a multi-role user architecture (User, Librarian, Admin), role-based dashboards, Stripe-powered secure payments, Firebase authentication, JWT-protected APIs, and a modern responsive UI.`,
+            features: [
+                "Multi-Role Library Delivery Platform, role-based dashboard (User, Librarian, Admin), protected routes📱",
+                "Firebase JWT authentication 🔐",
+                "Recharts-based rating charts 📊",
+                " Stripe Payment Integration, secure server-side payment intent 💳",
+                "Search + Sort + Filter 🔎",
+                "Advanced CRUD operations ⚡",
+                "Eye-catching UI, toast, sweetAlert2 , swiper etc ⭐ ",
+            ],
+        },
+        {
+            id: 2,
             tech: ["React", "Firebase", "Tailwind", "Express", "MongoDB"],
             title: "ARTIFY – A Creative Artwork Showcase Platform 🎨✨",
             image:
@@ -92,7 +112,7 @@ export default function ProjectsSection({id}) {
             ],
         },
         {
-            id: 2,
+            id: 3,
             tech: ["React", "Node.js", "MongoDB", "Tailwind"],
             title: "SkillSwap – Local Skill Exchange Platform 🤝🔥",
             image: "https://i.ibb.co.com/9mC8j7Nc/image.png",
@@ -109,26 +129,7 @@ export default function ProjectsSection({id}) {
                 "Profile Update 👤",
                 "Hero Slider + Popular Skills + Top Rated ⭐",
             ],
-        },
-        {
-            id: 3,
-            title: "Hero IO – App Store Listing Platform 📱🚀",
-            tech: ["React", "Firebase", "Stripe", "Tailwind"],
-            image: "https://i.ibb.co.com/YBH33FdS/image.png",
-            emoji: "⚡",
-            live: "https://warm-narwhal-bd2080.netlify.app/",
-            client:
-                "https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-08.git",
-            desc: `Hero IO is an app marketplace where users browse apps, view charts, install/uninstall using LocalStorage, search, filter, and navigate across dynamic pages smoothly.`,
-            features: [
-                "Home • All Apps • App Details • Installations 📱",
-                "Recharts-based rating charts 📊",
-                "LocalStorage App Install System 💾",
-                "Search + Sort + Filter 🔎",
-                "Loading Animations ⚡",
-                "Custom Error Page 🚫",
-            ],
-        },
+        }
     ];
 
     return (

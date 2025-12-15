@@ -14,11 +14,12 @@ import {
 import Skills from "./Skills";
 import ProjectsSection from "./ProjectsSection";
 import ContactFooterPage from "./ContactFooterPage";
+import pdf from "./assets/aftabmainresume.pdf"
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
-  const resumeUrl = "aftab-resume.pdf";
+  const resumeUrl = "https://drive.google.com/file/d/1uEi7qlzy6-Khld1xTW0rzOoANC6RGfVz/view?usp=sharing";
   const avatarRemote = "https://avatars.githubusercontent.com/u/220020666?v=4";
 
   const titleRef = useRef(null);
@@ -155,9 +156,11 @@ export default function App() {
             <a
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = resumeUrl;
-                link.download = "Aftab_Resume.pdf";
+                link.href = pdf;
+                link.setAttribute("download", "AFTAB_HOSSAIN_RESUME.pdf");
+                document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
               }}
               className="inline-flex items-center gap-2 bg-[#00C8FF] text-black px-3 py-2 rounded-lg shadow hover:bg-[#39FF14] transition"
             >
@@ -269,7 +272,7 @@ export default function App() {
               About Me
             </span>
           </motion.h2>
-          
+
           {/* <motion.h2
           ref={titleRef}
           initial={{ opacity: 0, y: -30 }}
